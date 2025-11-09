@@ -3,9 +3,6 @@ name: Build and Publish Base Docker Image
 on:
   workflow_dispatch:
   push:
-    tags: 
-      - 'v*.*.*'
-
     paths:
       - 'requirements-docker.txt'
       - 'Dockerfile-base'
