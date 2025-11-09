@@ -30,7 +30,7 @@ jobs:
       - name: Set Release Date
         id: release_date
         run: |
-          echo "release_date=$(date --rfc-3339=date)" >> ${GITHUB_ENV}
+          echo "release_date=$(date --rfc-3339=date)" >> $GITHUB_ENV
 
       - name: Build and push
         uses: docker/build-push-action@v6
